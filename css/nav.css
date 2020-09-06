@@ -1,52 +1,20 @@
-nav.navbar-light{
-	background-color:white;
-	font-family: 'Pavanam', sans-serif;
-	width: 100%
-	height: 80px;
+/*logo effect*/
+h2{
+  display: table-cell;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
-
-nav img{
-	max-width:50px;
+.title a {
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #E8FAFF 50%);
+  background-position: -5% 0;
+  background-size: 200% auto;
+  color: #fff;
+  font-size: 1.75em;
+  line-height: 1.15em;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
 }
-
-/* button */
-.button {
-	font-family: 'Pavanam', sans-serif;
-	border: 1px solid black;
-	background-color:white;
-	text-decoration: none;
-	color: black;
-	padding: 10px 20px;
-	margin-left: 10px;
-	margin-right:10px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	display: inline-grid;
-	border-radius: 5px;
-	transition: background 0.1s ease-in-out, color 0.1s ease-in-out;
-}
-.button:hover{
-	background-color:white;
-	color: black;
-	text-decoration:none;
-	border: 1px solid #ec9640;
-}
-
-/* footer */
-footer{
-	font-family: 'Pavanam', sans-serif;
-	font-size: 15px;
-	text-align: center;
-	margin: 80px;
-
-}
-
-footer a{
-	text-decoration:none;
-	color:#ec9640;
-}
-
-footer a:hover{
-	text-decoration:none;
-	opacity:0.3;
+.title a:hover {
+  background-position: -99.99% 0;
 }

@@ -1,18 +1,41 @@
- body, html{
-	min-height: 100%;	
-	background-image: url(../img/star.jpg);
+ body{
+	height: 100%;	
+	background-image: url(../img/cloudy.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-
+	margin: 0;
 }
 
-header h1{
-	width: 100%;
-	font-size:8em;
-  	color: white;
-  	top: 3em;
-  	position: absolute;
-  	z-index: 1;
-  	text-transform: uppercase;
-	text-align: center;	
+main{
+	position: relative;
+	top: 8em;
+	margin: 0;
+}
+
+.intro{
+	margin: auto;
+  	width: 100%;
+  	padding: 60px;
+}
+
+div.introtext{
+	border-left: solid;
+	border-width: 20px;
+	border-color: #E8FAFF;
+}
+/* footer */
+footer{
+ 	font-size: 15px;
+	text-align: center;
+	margin: 80px;
+}
+
+footer a{
+	text-decoration:none;
+	color:#ec9640;
+}
+
+footer a:hover{
+	text-decoration:none;
+	opacity:0.3;
 }
