@@ -41,23 +41,6 @@ footer a:hover{
 	opacity:0.3;
 }
 
-a.button {
-	margin: auto;
-	margin-top: 100px;
-	border: 1px solid black;
-	text-decoration: none;
-	color: black;
-	padding: 10px 20px;
-	border-radius: 15px;
-	transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
-}
-.button:hover{
-	background: black;
-	color: white;
-	text-decoration: none;
-}
-
-
 
 .typewriter h1 {
 	color: #fff;
