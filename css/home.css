@@ -10,12 +10,12 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0;
-	padding-bottom: 300px;
 }
 main{
 	position: relative;
 	top: 12em;
 	margin: 0;
+	padding-bottom: 300px;
 }
 
 /*mobile*/
