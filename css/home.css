@@ -1,24 +1,18 @@
  body{
-	background-image: url(../img/cloudy.jpg);
+	background-image: url(../img/cloudy3.jpg);
 	min-height: 100%;	
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0;
-	padding-bottom: 850px;
 }
 
 main{
 	position: relative;
-	top: 8em;
+	top: 12em;
 	margin: 0;
 }
 
-/*.intro{
-	margin: auto;
-  	width: 50%;
-}*/
-
-table{
+table.intro{
 	margin: auto;
 	width: 50%;
 }
@@ -38,11 +32,12 @@ div.introtext{
 	border-right: .15em solid orange; /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	letter-spacing: .10em; /* Adjust as needed */
+	letter-spacing: .05em; /* Adjust as needed */
 	animation: 
     typing 5.0s steps(35, end),
     blink-caret .5s step-end infinite;
     margin-left: 20px;
+    padding-right: 10px;
 }
 
 /* The typing effect */
@@ -55,4 +50,19 @@ div.introtext{
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange }
+}
+
+
+#work{
+	margin: auto;
+	position: relative;
+	top: 8em;
+	width: 60%;
+	background-image: linear-gradient(#EEEEEE, white);
+	border-radius: 25px;
+
+}
+
+#work td {
+	padding: 20px;
 }
