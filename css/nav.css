@@ -22,3 +22,16 @@ h2{
 .title a:hover {
   background-position: -99.99% 0;
 }
+
+
+nav li a {
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #E8FAFF 50%);
+  background-position: 0% -5;
+  background-size: 200% auto;
+  color: #fff;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+}
+nav li a:hover {
+  background-position: -99.99% 0;
+}

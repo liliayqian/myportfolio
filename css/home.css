@@ -13,15 +13,20 @@ main{
 	margin: 0;
 }
 
-.intro{
+/*.intro{
 	margin: auto;
   	width: 50%;
+}*/
+
+table{
+	margin: auto;
 }
 
 div.introtext{
 	border-left: solid;
 	border-width: 20px;
 	border-color: #E8FAFF;
+	width: 300px;
 }
 
 .typewriter h1 {
@@ -34,8 +39,9 @@ div.introtext{
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	letter-spacing: .10em; /* Adjust as needed */
 	animation: 
-    typing 5.0s steps(30, end),
-    blink-caret .6s step-end infinite;
+    typing 5.0s steps(35, end),
+    blink-caret .5s step-end infinite;
+    margin-left: 20px;
 }
 
 /* The typing effect */
