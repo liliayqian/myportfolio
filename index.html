@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lilia Qian</title>
-    <link rel="icon" href="img/icon.jpg">
 
-    <!-- css -->
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
-
-    <!-- jquery, bootstrap css, bootstrap js -->
-    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
-
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;500&display=swap" rel="stylesheet">
-
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lilia Qian</title>
+        <link rel="icon" href="img/icon.jpg">
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="css/home.css">
+        <link rel="stylesheet" type="text/css" href="css/nav.css">
+        <!-- jquery, bootstrap css, bootstrap js -->
+        <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;500&display=swap" rel="stylesheet">
+    </head>
 
     <body>
         <!-- horizontal navbar that becomes vertical on medium-sized screens -->
@@ -54,29 +51,77 @@
 
 
         <main>
-            <table class="intro">
-                <tr>
-                    <td>
-                        <img 
-                        class="profile" 
-                        src="./img/headshot3.jpg" 
-                        style="width: 250px; height:auto;
-                        float: right;
-                        border-radius: 180px;
-                        margin-top: 50px;
-                        margin-right: 20px;
-                        ">
-                    </td>
+<!--             <style>
+                    table.intro{
+                    margin: auto;
+                    width: 50%;
+                </style>
+                <table class="intro">
+                    <tr>
+                        <td>
+                            <img 
+                            class="profile" 
+                            src="./img/headshot3.jpg" 
+                            style="width: 250px; height:auto;
+                            float: right;
+                            border-radius: 180px;
+                            margin-top: 50px;
+                            margin-right: 20px;
+                            ">
+                        </td>
 
-                    <td>
-                        <div class="introtext">
-                        <div class="typewriter"><h1>Hi, I'm Lilia</h1></div>
-                        <p style="margin-left: 20px; padding-right: 30px;">
-                        Aspiring designer and web developer based in northern Virginia. I'm interested in using behavioral insights to create intelligent, intuitive designs. <br><br>I can be reached at lyq2@georgetown.edu.
+                        <td>
+                            <div class="introtext">
+                            <div class="typewriter"><h1>Hi, I'm Lilia</h1></div>
+                            <p style="margin-left: 20px; padding-right: 30px;">
+                            Aspiring designer and web developer based in northern Virginia. I'm interested in using behavioral insights to create intelligent, intuitive designs. <br><br>I can be reached at lyq2@georgetown.edu.
+                        </div>
+                        </td>
+                    </tr>
+                </table> -->
+
+            <!-- introduction -->
+            <style>
+                .profile{
+                    display: grid;
+                    grid-template-columns: repeat( 6, 1fr );
+                    grid-column-gap: 2.5%;
+                    margin: auto;
+                }
+
+                .profile img{
+                    grid-column: 3 / 4;
+                    max-width: 100%;
+                }
+
+                .about{
+                    grid-column: 4 / 5;
+                }
+
+                .profile .headshot {
+                    width: 100%;
+                }
+            </style>
+
+
+                <section>
+                    <div class="profile">
+                        <img 
+                            class="headshot" 
+                            src="./img/headshot3.jpg" 
+                            style="
+                            border-radius: 180px;
+                            ">
+
+                            <div class = "about">
+                            <div class="typewriter"><h1>Hi, I'm Lilia</h1></div>
+
+                            Aspiring designer and web developer based in northern Virginia. I'm interested in using behavioral insights to create intelligent, intuitive designs.
+                            </div>
+                        </div>
+
                     </div>
-                    </td>
-                </tr>
-            </table>
+                </section>
 
 
             <!-- <div class="intro">
@@ -142,6 +187,8 @@
                     </tr>
                 </table>
             </div>
+
+
         </main> 
     </body>
 </html>

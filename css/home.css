@@ -1,3 +1,8 @@
+ html{
+ 	min-height: 100%;
+	background-color: #BAC7CD;
+
+ }
  body{
 	background-image: url(../img/cloudy6.jpg);
 	min-height: 100%;	
@@ -14,13 +19,6 @@ main{
 
 }
 
-
-/*self introduction*/
-table.intro{
-	margin: auto;
-	width: 50%;
-}
-
 div.introtext{
 	border-left: solid;
 	border-width: 20px;
@@ -30,8 +28,8 @@ div.introtext{
 
 .typewriter h1 {
 	color: black;
+	line-height: 2.5em;
 	font-family: 'Encode Sans Semi Expanded', sans-serif;
-    line-height: 2em;
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
 	border-right: .15em solid orange; /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */

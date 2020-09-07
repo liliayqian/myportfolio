@@ -3,7 +3,7 @@ nav{
 }
 
 /*logo effect*/
-h2{
+ nav h2{
   display: table-cell;
   font-weight: 700;
   text-transform: uppercase;
