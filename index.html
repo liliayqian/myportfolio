@@ -8,7 +8,6 @@
         <link rel="icon" href="img/icon.jpg">
         <!-- css -->
         <link rel="stylesheet" type="text/css" href="css/home.css">
-        <link rel="stylesheet" type="text/css" href="css/nav.css">
         <!-- jquery, bootstrap css, bootstrap js -->
         <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -48,70 +47,21 @@
         </nav>
 
 
-        <main>
-            <!-- introduction -->
-            <section id="intro">
-            <div class="row profile">
-                <div class="col-sm">
-                    <img 
-                        class="headshot" 
-                        src="./img/headshot3.jpg" 
-                        style="
-                        max-width: 250px;
-                        border-radius: 180px;
-                        float: right;
-                        ">
-                </div>
-
-                <div class="col-sm about">
-                    <span class="typewriter" style="width: 55%;"><h1>Hi, I'm Lilia</h1></span>
-                    
-                    <div style="width: 100%;">
+    <main>
+        <section id="intro">
+            <div class="profile">
+                <img class="headshot" src="./img/headshot4.png">
+                <div class="about">
+                    <span class="typewriter"><h1>Hi, I'm Lilia</h1></span>
                     <p>Aspiring designer and web developer based in northern Virginia. I'm interested in using behavioral insights to create intelligent, intuitive designs.</p>
-                    </div>
                 </div>
             </div>
-            </section>
-
-            <style>
-                #work {
-                /*sets up css grid layout*/
-                display: grid;
-                grid-template-columns: repeat(7, 1fr );
-                grid-column-gap: 2.5%;
-                margin: auto;
-}
-                .project img{
-                    grid-column-start: 3;
-                    grid-column-end: 4;
-                }
-
-                #work article{
-                    grid-column: 3 / 6;
-                }
-
-                article.project{
-                    display: grid;
-                    grid-template-columns: (2, 1fr);
-                    grid-column-gap: 2.5%;
-                    margin: auto;
-                }
-
-                .project img{
-                    grid-column: 1/2;
-                }
-
-                .project .details{
-                    grid-column-start: 2;
-                }
-            </style>
-
-            <section id="work">
+        </section>
 
 
+        <section id="work">
             <div class="project">
                 <img src="img/design.jpg">
-
                 <div class="details">
                     <h3>Latest Project</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus feugiat in ante metus dictum. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Id diam vel quam elementum pulvinar etiam non quam lacus.</p>
@@ -123,7 +73,7 @@
                 <img src="img/journal.jpg">
                 <div class="details">
                     <h3>Project 2</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus feugiat in ante metus dictum. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Id diam vel quam elementum pulvinar etiam non quam lacus.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus feugiat in ante metus dictum. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Id diam vel quam elementum pulvinar etiam non quam lacus.</p>
                 </div>
             </div>
 
@@ -134,9 +84,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus feugiat in ante metus dictum. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Id diam vel quam elementum pulvinar etiam non quam lacus.</p>
                 </div>
             </div>
+        </section>
 
-            </section>
+    </main> 
 
-        </main> 
     </body>
 </html>

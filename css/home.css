@@ -1,6 +1,8 @@
 html {
 	min-height: 100%;
-	/*background-color: #BAC7CD;*/
+	margin: 0;
+	padding: 0;
+	background-color: #BAC7CD;
  }
 body {
 	background-image: url(../img/cloudy6.jpg);
@@ -13,61 +15,210 @@ main{
 	position: relative;
 	top: 12em;
 	margin: 0;
-	padding-bottom: 400px;
-}
-.typewriter h1 {
-	color: black;
-	line-height: 2.3em;
-	font-family: 'Encode Sans Semi Expanded', sans-serif;
-	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	border-right: .15em solid #FF7800; /* The typwriter cursor */
-	white-space: nowrap; /* Keeps the content on a single line */
-	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	letter-spacing: .05em; /* Adjust as needed */
-	animation: 
-    typing 5.0s steps(30, end),
-    blink-caret .7s step-end 8;
-}
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #FF7800 }
 }
 
-#intro, #work{
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10em;
+/*mobile*/
+@media (min-width: 0em) {
+	/*navigation*/
+	nav{
+	z-index: 1;
+	background-color: #E8E8EA;
+	}
+
+	.title a {
+	  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, orange 50%);
+	  background-position: -5% 0;
+	  background-size: 200% auto;
+	  color: #fff;
+	  font-size: 1.75em;
+	  line-height: 1.15em;
+	  text-decoration: none;
+	  transition: background-position 0.5s ease-out;
+	}
+
+	/*profile*/
+	.profile{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-column-gap: 2.5%;
+	}
+	.headshot{
+		max-width: 60%;
+		margin: auto;
+	}
+
+	.about{
+		margin: 15px;
+	}
+
+	/*projects*/
+	#work{
+		margin: 15px;
+	}
+
+	.project {
+		background-color: #E8E8EA;
+		border-radius: 15px;
+		padding: 10px;
+		margin-bottom: 35px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.project img{
+		max-width: 100%;
+		grid-column-end: span 1;
+		margin: auto;
+	}
 }
 
-.about{
-	border-left: solid;
-	border-width: 20px;
-	border-color: #E8FAFF;
+
+/*medium width*/
+@media ( min-width: 35em) {
+	/*profile*/
+
+	.profile{
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.headshot{
+		max-width: 100%;
+		margin: auto;
+		grid-column-start: 2;
+	}
+
+	.about{
+		grid-column: 3 / 4;
+		margin: 25px;
+	}
+
+	.typewriter h1 {
+		color: black;
+		line-height: 2.3em;
+		font-family: 'Encode Sans Semi Expanded', sans-serif;
+		overflow: hidden; /* Ensures the content is not revealed until the animation */
+		border-right: .15em solid #FF7800; /* The typwriter cursor */
+		white-space: nowrap; /* Keeps the content on a single line */
+		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+		letter-spacing: .05em; /* Adjust as needed */
+		animation: 
+	    typing 5.0s steps(30, end),
+	    blink-caret .5s step-end 10;
+	}
+	/* The typing effect */
+	@keyframes typing {
+	  from { width: 0 }
+	  to { width: 100% }
+	}
+	/* The typewriter cursor effect */
+	@keyframes blink-caret {
+	  from, to { border-color: transparent }
+	  50% { border-color: #FF7800 }
+	}
+
+
+	/*projects*/
+	#work{
+		margin: 30px;
+	}
+
+	.project {
+		background-color: #E8E8EA;
+		border-radius: 15px;
+		padding: 20px;
+		margin-bottom: 35px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.project img{
+		max-width: 100%;
+		grid-column: 1/2;
+		margin: auto;
+		padding-left: 20px;
+	}
+
+	.details{
+		padding: 20px;
+	}
 }
 
-.typewriter{
-	display: grid;
-	grid-template-columns: (2, 50%);
+
+	/*large screens*/
+@media screen and (min-width: 60em) {
+	/*navigation*/
+	nav{
+		background-color: transparent;
+	}
+	.title a:hover {
+	  background-position: -99.99% 0;
+	}
+
+	.profile {
+	grid-template-columns: repeat(6, 1fr );
+	}
+	/*sets headshot to fill 1 column*/
+	.headshot{
+	grid-column-start: 3;
+	grid-column-end: span 1;
+	max-width: 100%;
+	}
+
+	/*sets about section to span 2 columns*/
+	.about{
+	grid-column-start: 4;
+	grid-column-end: span 1;
+	}
+
+
+	/*projects*/
+	#work{
+		margin: 10em 15em 15em;
+	}
+
+	.project {
+		background-color: #E8E8EA;
+		border-radius: 15px;
+		padding: 20px;
+		margin-bottom: 35px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.project img{
+		max-width: 100%;
+		grid-column: 1/2;
+		margin: auto;
+		padding-left: 20px;
+	}
+
+	.details{
+		padding: 20px;
+	}
 }
 
-.typewriter h1{
-	grid-column: 1 / 2;
-}
 
-.project{
-	display: block;
-	background-color: #EEF2F5;
-	border-radius: 25px;
-	padding: 40px;
-}
 
-.project img{
-	max-width: 250px;
+
+	/*extra wide screens*/
+@media screen and (min-width: 80em) {	
+	/*projects*/
+	#work{
+		margin: 10em 25em 15em;
+	}
+
+	.project {
+		background-color: #E8E8EA;
+		border-radius: 15px;
+		padding: 20px;
+		margin-bottom: 35px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.project img{
+		max-width: 75%;
+		grid-column: 1/2;
+		margin: auto;
+	}
+
+	.details{
+		padding: 20px;
+	}
 }
