@@ -15,7 +15,7 @@ main{
 
 .intro{
 	margin: auto;
-  	width: 60%;
+  	width: 50%;
 }
 
 div.introtext{
@@ -25,10 +25,9 @@ div.introtext{
 }
 
 .typewriter h1 {
-	padding-left: 30px;
 	color: #fff;
+	font-size: 3.2vw;
 	font-family: 'Encode Sans Semi Expanded', sans-serif;
-	font-size: 2.8vw;
     line-height: 2em;
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
 	border-right: .15em solid orange; /* The typwriter cursor */
