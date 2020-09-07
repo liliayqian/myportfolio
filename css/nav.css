@@ -1,3 +1,7 @@
+nav{
+	z-index: 1;
+}
+
 /*logo effect*/
 h2{
   display: table-cell;
