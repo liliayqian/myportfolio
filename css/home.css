@@ -1,9 +1,10 @@
  body{
-	height: 100%;	
 	background-image: url(../img/cloudy.jpg);
+	min-height: 100%;	
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0;
+	padding-bottom: 500px;
 }
 
 main{
@@ -21,13 +22,13 @@ div.introtext{
 	border-left: solid;
 	border-width: 20px;
 	border-color: #E8FAFF;
-	width: 80%;
 }
 
 .typewriter h1 {
+	padding-left: 30px;
 	color: #fff;
 	font-family: 'Encode Sans Semi Expanded', sans-serif;
-	font-size: 3vw;
+	font-size: 2.8vw;
     line-height: 2em;
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
 	border-right: .15em solid orange; /* The typwriter cursor */
