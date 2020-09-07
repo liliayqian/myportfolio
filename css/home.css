@@ -26,7 +26,6 @@ div.introtext{
 
 .typewriter h1 {
 	color: #fff;
-	font-size: 3.2vw;
 	font-family: 'Encode Sans Semi Expanded', sans-serif;
     line-height: 2em;
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -36,7 +35,7 @@ div.introtext{
 	letter-spacing: .10em; /* Adjust as needed */
 	animation: 
     typing 5.0s steps(30, end),
-    blink-caret .75s step-end;
+    blink-caret .6s step-end infinite;
 }
 
 /* The typing effect */
