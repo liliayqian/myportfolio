@@ -1,6 +1,6 @@
 html {
 	min-height: 100%;
-	background-color: #BAC7CD;
+	/*background-color: #BAC7CD;*/
  }
 body {
 	background-image: url(../img/cloudy6.jpg);
@@ -39,7 +39,7 @@ main{
   50% { border-color: #FF7800 }
 }
 
-#intro{
+#intro, #work{
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
@@ -52,9 +52,6 @@ main{
 	border-color: #E8FAFF;
 }
 
-.project img{
-	max-width: 100%;
-}
 .typewriter{
 	display: grid;
 	grid-template-columns: (2, 50%);
@@ -62,4 +59,15 @@ main{
 
 .typewriter h1{
 	grid-column: 1 / 2;
+}
+
+.project{
+	display: block;
+	background-color: #EEF2F5;
+	border-radius: 25px;
+	padding: 40px;
+}
+
+.project img{
+	max-width: 250px;
 }
