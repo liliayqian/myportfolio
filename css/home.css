@@ -1,5 +1,5 @@
  body{
-	background-image: url(../img/cloudy3.jpg);
+	background-image: url(../img/cloudy6.jpg);
 	min-height: 100%;	
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -10,8 +10,12 @@ main{
 	position: relative;
 	top: 12em;
 	margin: 0;
+	padding-bottom: 400px;
+
 }
 
+
+/*self introduction*/
 table.intro{
 	margin: auto;
 	width: 50%;
@@ -21,7 +25,7 @@ div.introtext{
 	border-left: solid;
 	border-width: 20px;
 	border-color: #E8FAFF;
-	width: 300px;
+	width: 310px;
 }
 
 .typewriter h1 {
@@ -53,16 +57,21 @@ div.introtext{
 }
 
 
+
+/*work section*/
 #work{
 	margin: auto;
 	position: relative;
 	top: 8em;
 	width: 60%;
-	background-image: linear-gradient(#EEEEEE, white);
-	border-radius: 25px;
-
 }
 
 #work td {
 	padding: 20px;
+}
+
+.project{
+	margin-bottom: 30px;
+	background-image: linear-gradient(#EEEEEE, white);
+	border-radius: 25px;
 }

@@ -10,7 +10,10 @@ h2{
   vertical-align: middle;
 }
 .title a {
-  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #E8FAFF 50%);
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, 
+orange 50%);
+
+  	/*#E8FAFF 50%);*/
   background-position: -5% 0;
   background-size: 200% auto;
   color: #fff;
@@ -35,3 +38,4 @@ nav li a {
 nav li a:hover {
   background-position: -99.99% 0;
 }
+
