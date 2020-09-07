@@ -25,8 +25,6 @@
                 <a class="navbar-brand text-center w-100" href="index.html">LYQ</a>
             </h3>
 
-            <!-- <img src="img"></a> -->
-
             <!-- toggle button  -->
             <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
             <span class="navbar-toggler-icon"></span>
@@ -51,143 +49,88 @@
 
 
         <main>
-<!--             <style>
-                    table.intro{
-                    margin: auto;
-                    width: 50%;
-                </style>
-                <table class="intro">
-                    <tr>
-                        <td>
-                            <img 
-                            class="profile" 
-                            src="./img/headshot3.jpg" 
-                            style="width: 250px; height:auto;
-                            float: right;
-                            border-radius: 180px;
-                            margin-top: 50px;
-                            margin-right: 20px;
-                            ">
-                        </td>
-
-                        <td>
-                            <div class="introtext">
-                            <div class="typewriter"><h1>Hi, I'm Lilia</h1></div>
-                            <p style="margin-left: 20px; padding-right: 30px;">
-                            Aspiring designer and web developer based in northern Virginia. I'm interested in using behavioral insights to create intelligent, intuitive designs. <br><br>I can be reached at lyq2@georgetown.edu.
-                        </div>
-                        </td>
-                    </tr>
-                </table> -->
-
             <!-- introduction -->
+            <section id="intro">
+            <div class="row profile">
+                <div class="col-sm">
+                    <img 
+                        class="headshot" 
+                        src="./img/headshot3.jpg" 
+                        style="
+                        max-width: 300px;
+                        border-radius: 180px;
+                        ">
+                </div>
+
+                <div class="col-sm about">
+                    <span class="typewriter" style="width: 55%;"><h1>Hi, I'm Lilia</h1></span>
+                    <p>Aspiring designer and web developer based in northern Virginia. I'm interested in using behavioral insights to create intelligent, intuitive designs.</p>
+                </div>
+            </div>
+            </section>
+
             <style>
-                .profile{
+                #work {
+                /*sets up css grid layout*/
+                display: grid;
+                grid-template-columns: repeat(7, 1fr );
+                grid-column-gap: 2.5%;
+                margin: auto;
+}
+                .project img{
+                    grid-column-start: 3;
+                    grid-column-end: 4;
+                }
+
+                #work article{
+                    grid-column: 3 / 6;
+                }
+
+                article.project{
                     display: grid;
-                    grid-template-columns: repeat( 6, 1fr );
+                    grid-template-columns: (2, 1fr);
                     grid-column-gap: 2.5%;
                     margin: auto;
                 }
 
-                .profile img{
-                    grid-column: 3 / 4;
-                    max-width: 100%;
+                .project img{
+                    grid-column: 1/2;
                 }
 
-                .about{
-                    grid-column: 4 / 5;
-                }
-
-                .profile .headshot {
-                    width: 100%;
+                .project .details{
+                    grid-column-start: 2;
                 }
             </style>
 
+            <section id="work">
+                <article class="project">
+                    <img src="img/design.jpg">
 
-                <section>
-                    <div class="profile">
-                        <img 
-                            class="headshot" 
-                            src="./img/headshot3.jpg" 
-                            style="
-                            border-radius: 180px;
-                            ">
-
-                            <div class = "about">
-                            <div class="typewriter"><h1>Hi, I'm Lilia</h1></div>
-
-                            Aspiring designer and web developer based in northern Virginia. I'm interested in using behavioral insights to create intelligent, intuitive designs.
-                            </div>
-                        </div>
-
+                    <div class="details">
+                        <h3>Latest Project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus feugiat in ante metus dictum. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Id diam vel quam elementum pulvinar etiam non quam lacus.</p>
                     </div>
-                </section>
+                </article>  
 
 
-            <!-- <div class="intro">
-                <div class="row">
-                    <div class="col-sm">
-                        <img 
-                        class="profile" 
-                        src="./img/headshot3.jpg" 
-                        style="width: 250px; height:auto;
-                        float: right;
-                        border-radius: 180px;
-                        margin-top: 50px;
-                        ">
-                    </div>
+                <article class="project">
+                    <img src="img/journal.jpg">
 
-                    <div class="col-sm introtext">
-                        <div class="typewriter">
-                            <h1>Hi, I'm Lilia</h1>
-                        </div>
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus feugiat in ante metus dictum. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Id diam vel quam elementum pulvinar etiam non quam lacus. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Integer quis auctor elit sed. Venenatis tellus in metus vulputate eu scelerisque. 
-                        </p>
-                    </div>
-                </div>
-            </div> -->
-
-
-            <div id="work">
-
-                <table class="project">
-                    <tr>
-                        <td>
-                            <img src="img/design.jpg" style="max-width: 300px;">
-                        </td>
-                        <td>
-                        <h3>Project 1</h3>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus feugiat in ante metus dictum. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Id diam vel quam elementum pulvinar etiam non quam lacus.
-                        </td>
-                    </tr>
-                </table>
-
-                <table class="project">
-                    <tr>
-                        <td>
-                            <img src="img/journal.jpg" style="max-width: 300px;">
-                        </td>
-                        <td>
+                    <div class="details">
                         <h3>Project 2</h3>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus feugiat in ante metus dictum. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Id diam vel quam elementum pulvinar etiam non quam lacus.
-                        </td>
-                    </tr>
-                </table>
+                    </div>
+                </article>
 
-                <table class="project">
-                    <tr>
-                        <td>
-                            <img src="img/books.jpg" style="max-width: 300px;">
-                        </td>
-                        <td>
+                <article class="project">
+                    <img src="img/books.jpg">
+                    <div class="details">
                         <h3>Project 3</h3>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus feugiat in ante metus dictum. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Id diam vel quam elementum pulvinar etiam non quam lacus.
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus feugiat in ante metus dictum. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Id diam vel quam elementum pulvinar etiam non quam lacus.</p>
+                    </div>
+                </article>
 
+            </section>
 
         </main> 
     </body>
