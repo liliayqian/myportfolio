@@ -1,9 +1,8 @@
 html {
 	min-height: 100%;
-	background-color: #BAC7CD;
  }
 body {
-	background-image: url(../img/cloudy6.jpg);
+	background-image: url(../img/cloudy7.jpg);
 	min-width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -26,7 +25,7 @@ main{
 /*navigation links*/
 nav li a{
 	text-decoration: none;
-  	background: linear-gradient(to right, orange, orange 50%, black 50%);
+  	background: linear-gradient(to right, #FFDE0C, #FFDE0C 50%, black 50%);
 	background-clip: text;
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
@@ -43,7 +42,7 @@ nav li a:hover {
 a.contact{
 	font-weight: bold;
 	text-decoration: none;
-  	background: linear-gradient(to right, orange, orange 50%, black 50%);
+  	background: linear-gradient(to right, #FFDE0C, #FFDE0C 50%, black 50%);
 	background-clip: text;
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
@@ -60,7 +59,7 @@ a.contact:hover{
 a.learn-more{
 	text-decoration: none;
 	font-weight: bold;
-  	background: linear-gradient(to right, orange, orange 50%, black 50%);
+  	background: linear-gradient(to right, #FFDE0C, #FFDE0C 50%, black 50%);
 	background-clip: text;
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
@@ -75,8 +74,8 @@ a.learn-more:hover{
 
 /*footer*/
 footer{
-	background-color: #D3DBDE;
-	padding: 5em;
+	background-color: #F3F3F3;
+	padding: 4em;
 	margin: 0;
 	text-align: center;
 }
@@ -125,7 +124,7 @@ footer img.grow:hover {
 	}
 
 	.title a {
-	  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, orange 50%);
+	  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #FFDE0C 50%);
 	  background-position: -5% 0;
 	  background-size: 200% auto;
 	  color: #fff;
@@ -160,7 +159,7 @@ footer img.grow:hover {
 	}
 
 	.project {
-		background-color: #E8E8EA;
+		background-color: #FBFBFB;
 		border-radius: 15px;
 		padding: 10px;
 		margin-bottom: 35px;
@@ -196,7 +195,7 @@ footer img.grow:hover {
 
 	.about p{
 		border-right: 7px solid;
-		border-color: orange;
+		border-color: #FFDE0C;
 		text-align: right;
 		padding-right: 10px;
 	}
@@ -206,7 +205,7 @@ footer img.grow:hover {
 		color: black;
 		line-height: 2.3em;
 		overflow: hidden; /* Ensures the content is not revealed until the animation */
-		border-right: 7px solid orange; /* The typwriter cursor */
+		border-right: 7px solid #FFDE0C; /* The typwriter cursor */
 		white-space: nowrap; /* Keeps the content on a single line */
 		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 		letter-spacing: .03em; /* Adjust as needed */
@@ -222,7 +221,7 @@ footer img.grow:hover {
 	/* The typewriter cursor effect */
 	@keyframes blink-caret {
 	  from, to { border-color: transparent }
-	  50% { border-color: orange }
+	  50% { border-color: #FFDE0C }
 	}
 
 
@@ -232,7 +231,6 @@ footer img.grow:hover {
 	}
 
 	.project {
-		background-color: #E8E8EA;
 		border-radius: 15px;
 		padding: 20px;
 		margin-bottom: 35px;
@@ -293,7 +291,6 @@ footer img.grow:hover {
 	}
 
 	.project {
-		background-color: #E8E8EA;
 		border-radius: 15px;
 		padding: 20px;
 		margin-bottom: 35px;
