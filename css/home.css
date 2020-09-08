@@ -1,7 +1,5 @@
 html {
 	min-height: 100%;
-	margin: 0;
-	padding: 0;
 	background-color: #BAC7CD;
  }
 body {
@@ -9,7 +7,15 @@ body {
 	min-width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin: 0;
+	margin: 0 auto;
+	max-width: 30em;
+}
+
+@supports ( display: grid){
+	body{
+		margin: 0;
+		max-width: inherit;
+	}
 }
 main{
 	position: relative;
