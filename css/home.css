@@ -34,6 +34,22 @@ nav li a:hover {
 	background-position: 0 100%;
 }
 
+/*contact links*/
+a.contact{
+	font-weight: bold;
+	text-decoration: none;
+  	background: linear-gradient(to right, orange, orange 50%, black 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	background-size: 200% 100%;
+  	background-position: 100%;
+  	transition: background-position 275ms ease;
+}
+
+.contact:hover{
+	background-position: 0 100%;
+}
 
 /*links*/
 a.learn-more{
@@ -147,8 +163,8 @@ a.learn-more{
 		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 		letter-spacing: .03em; /* Adjust as needed */
 		animation: 
-	    typing 5.0s steps(30, end),
-	    blink-caret .5s step-end 11;
+	    typing 3.0s steps(30, end),
+	    blink-caret .5s step-end 7;
 	}
 	/* The typing effect */
 	@keyframes typing {
