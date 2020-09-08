@@ -144,7 +144,7 @@ main{
 
 
 	/*large screens*/
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 75em) {
 	/*navigation*/
 	nav{
 		background-color: transparent;
@@ -156,14 +156,11 @@ main{
 	.profile {
 	grid-template-columns: repeat(6, 1fr );
 	}
-	/*sets headshot to fill 1 column*/
 	.headshot{
 	grid-column-start: 3;
 	grid-column-end: span 1;
 	max-width: 100%;
 	}
-
-	/*sets about section to span 2 columns*/
 	.about{
 	grid-column-start: 4;
 	grid-column-end: span 1;
@@ -172,7 +169,7 @@ main{
 
 	/*projects*/
 	#work{
-		margin: 10em 15em 15em;
+		margin: 10em 13em 15em;
 	}
 
 	.project {
@@ -184,42 +181,13 @@ main{
 	}
 
 	.project img{
-		max-width: 100%;
-		grid-column: 1/2;
+		max-width: 85%;
+		grid-column: 1 / 2;
 		margin: auto;
 		padding-left: 20px;
 	}
 
 	.details{
-		padding: 20px;
-	}
-}
-
-
-
-
-	/*extra wide screens*/
-@media screen and (min-width: 80em) {	
-	/*projects*/
-	#work{
-		margin: 10em 18em 15em;
-	}
-
-	.project {
-		background-color: #E8E8EA;
-		border-radius: 15px;
-		padding: 20px;
-		margin-bottom: 35px;
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.project img{
-		max-width: 100%;
-		grid-column: 1/2;
-		margin: auto;
-	}
-
-	.details{
-		padding: 20px;
+		padding: 40px;
 	}
 }
