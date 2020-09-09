@@ -2,14 +2,13 @@ html {
 	min-height: 100%;
  }
 body {
-	background-image: url(../img/cloudy7.jpg);
+	background-image: url(../img/cloudy8.jpg);
 	min-width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0 auto;
 	max-width: 30em;
 }
-
 @supports ( display: grid){
 	body{
 		margin: 0;
@@ -22,6 +21,13 @@ main{
 	margin: 0;
 }
 
+/*font controls*/
+body h1, h2, h3, h4{
+}
+
+body p, a, .title{
+}
+
 /*navigation links*/
 nav li a{
 	text-decoration: none;
@@ -32,33 +38,17 @@ nav li a{
   	background-size: 200% 100%;
   	background-position: 100%;
   	transition: background-position 275ms ease;
-
-}
-nav li a:hover {
-	background-position: 0 100%;
 }
 
-/*contact links*/
-a.contact{
-	font-weight: bold;
-	text-decoration: none;
-  	background: linear-gradient(to right, #FFDE0C, #FFDE0C 50%, black 50%);
-	background-clip: text;
-	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-  	background-size: 200% 100%;
-  	background-position: 100%;
-  	transition: background-position 275ms ease;
-}
-
-a.contact:hover{
+nav li a:hover{
 	background-position: 0 100%;
 }
 
 /*project learn more links*/
 a.learn-more{
-	text-decoration: none;
 	font-weight: bold;
+	font-size: 1em;
+	text-decoration: none;
   	background: linear-gradient(to right, #FFDE0C, #FFDE0C 50%, black 50%);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -74,10 +64,11 @@ a.learn-more:hover{
 
 /*footer*/
 footer{
-	background-color: #F3F3F3;
+	background-color: #FAFBFF;
 	padding: 4em;
 	margin: 0;
 	text-align: center;
+	border-top: 3px solid #FFDE0C;
 }
 
 footer img{
@@ -85,22 +76,19 @@ footer img{
 	margin: .5em;
 }
 
-footer img.grow {
-	transition: all .2s ease-in-out;
-}
-
-footer img.grow:hover {
-	transform: scale(1.5);
-}
-
-/*box shadow project tiles*/
-/* All HTML you need is <div class="box"></div> */
-
-/* Create a simple white box, and add the shadow for the initial state */
 .project {
-  border-radius: 5px;
-  box-shadow: 0 1.5px 3.5px gray;
-  transition: all 0.3s ease-in-out;
+	border-radius: 5px;
+	box-shadow: 0 1.5px 3.5px gray;
+	transition: all 0.3s ease-in-out;
+	background-color: #FAFBFF;
+}
+
+.project h2{
+	line-height: 1.5em;
+	font-size: 2.25em;
+}
+
+.details{
 }
 
 /* Create the hidden pseudo-element */
@@ -141,7 +129,7 @@ footer img.grow:hover {
 		grid-column-gap: 2.5%;
 	}
 	.headshot{
-		max-width: 60%;
+		max-width: 70%;
 		margin: auto;
 	}
 
@@ -159,7 +147,6 @@ footer img.grow:hover {
 	}
 
 	.project {
-		background-color: #FBFBFB;
 		border-radius: 15px;
 		padding: 10px;
 		margin-bottom: 35px;
@@ -174,36 +161,31 @@ footer img.grow:hover {
 	}
 }
 
-
 /*medium width*/
 @media ( min-width: 35em) {
-	/*profile*/
-
-	.profile{
+	.profile {
 		grid-template-columns: repeat(4, 1fr);
 	}
 	.headshot{
-		max-width: 100%;
-		margin: auto;
+		max-width: 110%;
 		grid-column-start: 2;
 	}
-
 	.about{
 		grid-column: 3 / 4;
 		margin: 25px;
 	}
-
 	.about p{
 		border-right: 7px solid;
 		border-color: #FFDE0C;
 		text-align: right;
 		padding-right: 10px;
 	}
-
 	.typewriter h1 {
-		padding-right: 10px;
+		font-size: 3em;
 		color: black;
 		line-height: 2.3em;
+
+		padding-right: 10px;
 		overflow: hidden; /* Ensures the content is not revealed until the animation */
 		border-right: 7px solid #FFDE0C; /* The typwriter cursor */
 		white-space: nowrap; /* Keeps the content on a single line */
@@ -224,39 +206,24 @@ footer img.grow:hover {
 	  50% { border-color: #FFDE0C }
 	}
 
-
 	/*projects*/
 	#work{
 		margin: 30px;
 	}
-
 	.project {
 		border-radius: 15px;
 		padding: 20px;
 		margin-bottom: 35px;
 		grid-template-columns: repeat(2, 1fr);
 	}
-
 	.project img{
 		max-width: 100%;
 		grid-column: 1/2;
 		margin: auto;
 		padding-left: 20px;
 	}
-
 	.details{
 		padding: 20px;
-	}
-
-	/*projects - box shadow hover effect*/
-	/* Scale up the box */
-	.project:hover {
-	  transform: scale(1.05, 1.05);
-	}
-
-	/* Fade in the pseudo-element with the bigger shadow */
-	.project:hover::after {
-	  opacity: 1;
 	}
 }
 
@@ -277,7 +244,8 @@ footer img.grow:hover {
 	.headshot{
 	grid-column-start: 3;
 	grid-column-end: span 1;
-	max-width: 100%;
+	max-width: 130%;
+
 	}
 	.about{
 	grid-column-start: 4;
@@ -306,5 +274,25 @@ footer img.grow:hover {
 
 	.details{
 		padding: 40px;
+	}
+
+
+		/*projects - box shadow hover effect*/
+	/* Scale up the box */
+	.project:hover {
+	  transform: scale(1.05, 1.05);
+	}
+
+	/* Fade in the pseudo-element with the bigger shadow */
+	.project:hover::after {
+	  opacity: 1;
+	}
+
+	footer img.grow {
+	transition: all .2s ease-in-out;
+	}
+
+	footer img.grow:hover {
+	transform: scale(1.5);
 	}
 }
