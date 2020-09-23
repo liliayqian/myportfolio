@@ -1,0 +1,33 @@
+/*mobile*/
+@media (min-width: 0em) {
+	.headshot{
+		max-width: 70%;
+		margin: auto;
+		padding: 25px;
+	}
+}
+
+/*medium width*/
+@media ( min-width: 35em) {
+	.headshot{
+		max-width: 100%;
+		grid-column-start: 2;
+		padding: 5px;
+	}
+}
+
+	/*large screens*/
+@media screen and (min-width: 80em) {
+	.profile {
+	grid-template-columns: repeat(7, 1fr );
+	}
+	.headshot{
+	grid-column-start: 3;
+	grid-column-end: span 1;
+	max-width: 100%;
+	}
+	.about{
+	grid-column-start: 4;
+	grid-column-end: span 2;
+	}
+}
