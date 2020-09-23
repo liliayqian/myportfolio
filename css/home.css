@@ -267,10 +267,7 @@ footer img{
 	.project {
 		border-radius: 15px;
 		grid-template-columns: repeat(2, 1fr);
-		
-		margin: auto;
 		margin-bottom: 35px;
-		max-width: 75%;
 	}
 
 	.project img{

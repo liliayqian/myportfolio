@@ -14,12 +14,19 @@
 		grid-column-start: 2;
 		padding: 5px;
 	}
-}
+	.profile a{
+		color: black;
+		font-weight: bold;
+	}
+	.profile a:hover {
+		text-decoration: none;
+		opacity: 0.3;
+	}
 
 	/*large screens*/
 @media screen and (min-width: 80em) {
 	.profile {
-	grid-template-columns: repeat(7, 1fr );
+	grid-template-columns: repeat(8, 1fr );
 	}
 	.headshot{
 	grid-column-start: 3;
@@ -28,6 +35,5 @@
 	}
 	.about{
 	grid-column-start: 4;
-	grid-column-end: span 2;
-	}
+	grid-column-end: span 3;
 }
