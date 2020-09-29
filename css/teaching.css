@@ -1,0 +1,44 @@
+table td, th {
+	line-height: 3em;
+}
+
+table th {
+	padding-right: 30px;
+}
+
+/*mobile*/
+@media (min-width: 0em) {
+	/*profile*/
+	#tutor-intro{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-column-gap: 2.5%;
+	}
+}
+
+/*medium width*/
+@media ( min-width: 35em) {
+	#tutor-intro{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-column-gap: 2.5%;
+	}
+
+	#tutor-intro div{
+		grid-column: 2/4;
+	}
+}
+
+
+	/*large screens*/
+@media screen and (min-width: 80em) {
+	#tutor-intro{
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-column-gap: 2.5%;
+	}
+
+	#tutor-intro div{
+		grid-column: 3/5
+	}
+}
